@@ -1,0 +1,53 @@
+:root{
+    --background: #252525;
+    --orange: #FFA400;
+    --red: #FC2933;
+    --white: #FFFFFF;
+    --gradient: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    background-color: var(--background);
+}
+
+.navbar-header{
+    background-color: var(--background);
+}
+
+.icono-pizza{
+    width: 60%;
+}
+
+.section-home{
+    margin: 0px 7px 0px 0px;
+}
+
+.text-home-nav{
+    color: var(--white);
+}
+
+.text-home-nav:hover{
+    color: var(--orange);
+    text-decoration: underline var(--orange) 2px;
+    transition: ease-in-out 350ms;
+}
+
+.item-home-navbar:hover{
+    color: var(--orange);
+    text-decoration: underline var(--orange) 2px;
+    transition: ease-in-out 350ms;
+}
+
+@media (min-width: 576px){
+    .navbar-expand-sm .navbar-collapse{
+        justify-content: flex-end;
+        margin: 0px 50px 0px 0px;
+    }
+}
