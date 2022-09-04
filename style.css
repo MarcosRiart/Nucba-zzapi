@@ -1,5 +1,5 @@
 :root {
-  --background: #252525;
+  --background: black;
   --orange: #ffa400;
   --red: #fc2933;
   --white: #ffffff;
@@ -82,8 +82,9 @@ body {
 
 .cat-sub {
   display: flex;
-  gap: 30px;
-
+  justify-content: center;
+width: 100%;
+gap: 30px;
 }
 @media (max-width:  756px) {
     .cat-sub {
