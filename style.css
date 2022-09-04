@@ -47,7 +47,7 @@ body {
   transition: ease-in-out 350ms;
 }
 
-@media (max-width: 756px) {
+@media (min-width: 756px) {
   .navbar-expand-sm .navbar-collapse {
     justify-content: flex-end;
     margin: 0px 50px 0px 0px;
@@ -83,7 +83,7 @@ body {
 .cat-sub {
   display: flex;
   gap: 30px;
-  justify-content: center;
+
 }
 @media (max-width:  756px) {
     .cat-sub {
