@@ -129,14 +129,16 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5%;
     margin-left: 7%;
 }
 
 .populares{
     background-color: var(--gray);
+    box-shadow: 0px 48px 128px rgba(0, 0, 0, 0.4); /* ! Arreglar */
     margin-top: 2.5%;
     width: 70%;
-    height: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -160,7 +162,51 @@ body{
     margin-left: 5%;
 }
 
+.popu-price{
+    display: flex;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 1.3rem;
+    width: 25%;
+    margin-left: 5%;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.price::before{
+    content: "$";
+}
+
+.price::first-letter{
+    margin-right: 10%;
+}
+
+.price.free{
+    width: 30%;
+}
+
+.popu-agregar{
+    width: 30%;
+    height: 70%;
+    margin-left: 35%;
+    border: none;
+    border-radius: 15px;
+    background: var(--gradient);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
 @media (min-width: 1024px){
+    :root{
+        font-size: 12px;
+    }
+
     .section-hero{
         display: flex;
         align-items: center;
@@ -192,6 +238,9 @@ body{
 }
 
 @media (min-width: 576px){
+    :root{
+        font-size: 10px;
+    }
     .navbar-expand-sm .navbar-collapse{
         justify-content: flex-end;
         margin: 0px 50px 0px 0px;
