@@ -706,3 +706,179 @@ body {
       color: white;
     }
   }
+
+  .recomendacion{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.recomendacion .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recomendacion-card{
+    background: var(--background);
+    width: 80%;
+    max-width: 380px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 180px;
+    transition: all 0.7s ease ;
+}
+
+.recomendacion-card:hover{
+    transform: scale(1.1);
+}
+
+.recomendacion-img img{
+    display: none;
+}
+
+.recomendacion h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 131.02%;
+}
+
+.recomendacion-btn button{
+    background: var(--gradient);
+    border: none;
+    border-radius: 17.5px;
+    padding: 12px 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    margin-top: 10px;
+    transition: all 0.6s ease;
+}
+
+.recomendacion-btn button:hover{
+    transform: scale(1.1);
+}
+
+.recomendacion-info h2{
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.20em;
+    line-height: 131.02%; 
+    margin-top: 20px; 
+}
+
+.recomendacion-info p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    margin-top: 2px;
+}
+
+.recomendacion-info h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 131.02%;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin:5px 0px 8px 0px ;
+}
+
+@media (min-width: 1440px){
+    .recomendacion-card{
+        margin: 20px;
+        height: 103px;
+    }
+
+    .recomendacion h3{
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .recomendacion{
+        text-align: start;
+    }
+
+    .recomendacion h3{
+        margin: 15px 0px 10px 5%;
+        font-size: 22px;
+    }
+    
+    .recomendacion .container{
+        flex-direction: row;
+    }
+
+    .recomendacion-card{
+        margin: 20px;
+        width: 30%;
+        max-width: 347;
+        height: 103px;
+        max-height: 200px;
+    }
+
+    .recomendacion-info h2{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .recomendacion-info p{
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+@media(min-width: 768px){
+
+    .recomendacion-card{
+        width: 55%;
+        max-width: 500px;
+        height: 200px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recomendacion-img img{
+        display: inline;
+        margin: 0px 8px 0px 15px;
+    }
+
+    .recomendacion-info{
+        margin-right: 8px;
+    }
+
+    .recomendacion-info h2{
+        font-size: 20px;
+    }
+
+    .recomendacion-info p{
+        font-size: 19px;
+    }
+
+    .recomendacion-info h3{
+        font-size: 26px;
+    }
+
+    .recomendacion-btn button{
+        margin-right: 15px;
+    }
+}
