@@ -1,6 +1,6 @@
 :root {
   --background:
-  #131415;
+  #252525;
   --orange: #ffa400;
   --red: #fc2933;
   --white: #ffffff;
@@ -773,8 +773,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 1.20em;
-    line-height: 131.02%; 
-    margin-top: 20px; 
+    line-height: 131.02%;
 }
 
 .recomendacion-info p{
@@ -804,6 +803,9 @@ body {
     .recomendacion-card{
         margin: 20px;
         height: 103px;
+        max-height: 103px;
+        width: 347px;
+        justify-content: space-around;
     }
 
     .recomendacion h3{
@@ -811,7 +813,7 @@ body {
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1200px){
 
     .recomendacion{
         text-align: start;
@@ -829,9 +831,9 @@ body {
     .recomendacion-card{
         margin: 20px;
         width: 30%;
-        max-width: 347;
-        height: 103px;
-        max-height: 200px;
+        max-width: 347px;
+        height: 125px;
+        max-height: 125px;
     }
 
     .recomendacion-info h2{
@@ -842,6 +844,10 @@ body {
     .recomendacion-info p{
         font-size: 14px;
         margin: 0;
+    }
+
+    .recomendacion-info h3{
+      margin-top: 2px;
     }
 }
 
