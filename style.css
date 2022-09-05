@@ -160,6 +160,335 @@ body {
       display: flex;
       flex-direction: column;
       position: relative;
+      top: 350px;}
+
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content:space-around;
+    color: white;
+}
+
+.hero-container{
+    height: auto;
+    width: 100%;
+    flex-direction: column;                         
+    display: flex;  
+    align-items: center;     
+ }
+ 
+ .hero-img{    
+     width: 100%;
+     max-width: 400px;     
+ }
+
+.hero-titulo{  
+    font-family: 'Montserrat';
+    font-weight: 700;  
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+}
+
+.hero-parrafo{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-align: center;
+    font-size: 21px;
+}
+
+.hero-titulo2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;    
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 4px;    
+}
+
+.hero-boton{
+    font-size: 14px;
+    color: white;
+    background: var(--gradient);
+    border-radius: 15px;
+    box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
+    height: 50px;
+    width: 166px;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.pizza-img{
+    height: 100%;
+    margin: -30px 20px -30px 20px;
+}
+
+.hero-boton:hover{
+    transform:scale(1.1);
+}
+
+
+
+@media (min-width: 1024px){
+    .section-hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .hero-container{
+        justify-content: center;
+        align-items: start;
+        width: auto;         
+    }
+    .hero-img{    
+        max-width: 480px;      
+    }
+    .hero-parrafo{
+        text-align: left;
+    }
+    .hero-titulo{
+        text-align: left;
+    }
+    .hero-titulo2{
+        text-align: left;
+    }
+}
+
+@media (min-width: 576px){
+    .navbar-expand-sm .navbar-collapse{
+        justify-content: flex-end;
+        margin: 0px 50px 0px 0px;
+    }
+  
+  
+  
+    .categorias-h2 {
+      color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cat-sub {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  
+    .menu-cat {
+      background: #252525;
+      width: 130px;
+      height: 130px;
+      border: none;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .img-cat1 {
+      display: flex;
+      flex-direction: column;
+      background: url(./images/unknown.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 65px;
+    }
+  
+    .img-cat2 {
+      display: flex;
+      flex-direction: column;
+      background: url(./images/burger\ 1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 65px;
+    }
+  
+    .img-cat3 {
+      display: flex;
+      flex-direction: column;
+      background: url(./images/unknown2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 65px;
+    }
+  
+    .img-cat4 {
+      display: flex;
+      flex-direction: column;
+      background: url(./images/pizza\ 1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 65px;
+    }
+    .img-cat5 {
+      display: flex;
+      flex-direction: column;
+      background: url(./images/buritto\ 1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 65px;
+    }
+  
+    .img-cat6 {
+      display: flex;
+      flex-direction: column;
+      background: url(./images/taco\ 1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 65px;
+    }
+  
+    .img-cat7 {
+      display: flex;
+      flex-direction: column;
+      background: url(./images/float\ 1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 65px;
+    }
+  
+    .recta-cat {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
+      width: 20px;
+      height: 3px;
+      border-radius: 15px;
+      border: none;
+    }
+  
+    .p {
+      background-color: #252525;
+      color: white;
+    }
+}
+
+.contenedor-cat {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 350px;
+}
+
+.categorias-h2 {
+  color: rgb(255, 255, 255);
+}
+
+.cat-sub {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.menu-cat {
+  background: #252525;
+  width: 130px;
+  height: 130px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-cat1 {
+  background: url(./images/unknown.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+}
+
+.img-cat2 {
+  background: url(./images/burger\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+}
+
+.img-cat3 {
+  background: url(./images/unknown2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+}
+
+.img-cat4 {
+  background: url(./images/pizza\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+}
+
+.img-cat5 {
+  background: url(./images/buritto\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+}
+
+.img-cat6 {
+  background: url(./images/taco\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+}
+
+.img-cat7 {
+  background: url(./images/float\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+}
+
+.recta-cat {
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
+  width: 20px;
+  height: 3px;
+  border-radius: 15px;
+  border: none;
+}
+
+.p {
+  background-color: #252525;
+  color: white;
+}
+
+@media (max-width: 756px) {
+    .contenedor-cat {
+      display: flex;
+      flex-direction: column;
+      position: relative;
       top: 350px;
     }
   
@@ -277,4 +606,3 @@ body {
       color: white;
     }
   }
-  
