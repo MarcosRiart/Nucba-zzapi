@@ -264,6 +264,109 @@ body {
     }
 }
 
+
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content:space-around;
+    color: white;
+}
+
+.hero-container{
+    height: auto;
+    width: 100%;
+    flex-direction: column;                         
+    display: flex;  
+    align-items: center;     
+ }
+ 
+ .hero-img{    
+     width: 100%;
+     max-width: 400px;     
+ }
+
+.hero-titulo{  
+    font-family: 'Montserrat';
+    font-weight: 700;  
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+}
+
+.hero-parrafo{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-align: center;
+    font-size: 21px;
+}
+
+.hero-titulo2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;    
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 4px;    
+}
+
+.hero-boton{
+    font-size: 14px;
+    color: white;
+    background: var(--gradient);
+    border-radius: 15px;
+    box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
+    height: 50px;
+    width: 166px;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.pizza-img{
+    height: 100%;
+    margin: -30px 20px -30px 20px;
+}
+
+.hero-boton:hover{
+    transform:scale(1.1);
+}
+
+
+
+@media (min-width: 1024px){
+    .section-hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .hero-container{
+        justify-content: center;
+        align-items: start;
+        width: auto;         
+    }
+    .hero-img{    
+        max-width: 480px;      
+    }
+    .hero-parrafo{
+        text-align: left;
+    }
+    .hero-titulo{
+        text-align: left;
+    }
+    .hero-titulo2{
+        text-align: left;
+    }
+}
+
 @media (min-width: 576px){
     .navbar-expand-sm .navbar-collapse{
         justify-content: flex-end;
