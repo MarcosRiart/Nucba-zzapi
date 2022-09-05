@@ -155,12 +155,7 @@ body {
   color: white;
 }
 
-@media (max-width: 756px) {
-    .contenedor-cat {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: 350px;}
+
 
 .hero{
     width: 100%;
@@ -372,20 +367,22 @@ body {
         justify-content: flex-end;
         margin: 0px 50px 0px 0px;
     }
+   }
   
   
   
     .categorias-h2 {
       color: rgb(255, 255, 255);
       display: flex;
-      flex-direction: column;
+    font-weight: 800;
+    size: 15px;
+    line-height: 19.65px;
       align-items: center;
     }
   
     .cat-sub {
       display: flex;
-      flex-direction: column;
-      gap: 30px;
+          gap: 30px;
       justify-content: center;
       align-items: center;
     }
@@ -486,7 +483,7 @@ body {
       background-color: #252525;
       color: white;
     }
-}
+
 
 .contenedor-cat {
   display: flex;
