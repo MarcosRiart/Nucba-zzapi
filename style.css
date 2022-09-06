@@ -67,96 +67,6 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.cat-sub {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 30px;
-}
-
-.menu-cat {
-  background: #252525;
-  width: 130px;
-  height: 130px;
-  border: none;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-cat1 {
-  background: url(./images/unknown.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 65px;
-  height: 65px;
-}
-
-.img-cat2 {
-  background: url(./images/burger\ 1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 65px;
-  height: 65px;
-}
-
-.img-cat3 {
-  background: url(./images/unknown2.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 65px;
-  height: 65px;
-}
-
-.img-cat4 {
-  background: url(./images/pizza\ 1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 65px;
-  height: 65px;
-}
-
-.img-cat5 {
-  background: url(./images/buritto\ 1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 65px;
-  height: 65px;
-}
-
-.img-cat6 {
-  background: url(./images/taco\ 1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 65px;
-  height: 65px;
-}
-
-.img-cat7 {
-  background: url(./images/float\ 1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 65px;
-  height: 65px;
-}
-
-.recta-cat {
-  background: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
-  width: 20px;
-  height: 3px;
-  border-radius: 15px;
-  border: none;
-}
-
-.p {
-  background-color: #252525;
-  color: white;
-}
-
-
-
 .hero{
     width: 100%;
     display: flex;
@@ -370,121 +280,6 @@ body {
    }
   
   
-  
-    .categorias-h2 {
-      color: rgb(255, 255, 255);
-      display: flex;
-    font-weight: 800;
-    size: 15px;
-    line-height: 19.65px;
-      align-items: center;
-    }
-  
-    .cat-sub {
-      display: flex;
-          gap: 30px;
-      justify-content: center;
-      align-items: center;
-    }
-  
-  
-    .menu-cat {
-      background: #252525;
-      width: 130px;
-      height: 130px;
-      border: none;
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .img-cat1 {
-      display: flex;
-      flex-direction: column;
-      background: url(./images/unknown.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 65px;
-      height: 65px;
-    }
-  
-    .img-cat2 {
-      display: flex;
-      flex-direction: column;
-      background: url(./images/burger\ 1.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 65px;
-      height: 65px;
-    }
-  
-    .img-cat3 {
-      display: flex;
-      flex-direction: column;
-      background: url(./images/unknown2.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 65px;
-      height: 65px;
-    }
-  
-    .img-cat4 {
-      display: flex;
-      flex-direction: column;
-      background: url(./images/pizza\ 1.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 65px;
-      height: 65px;
-    }
-    .img-cat5 {
-      display: flex;
-      flex-direction: column;
-      background: url(./images/buritto\ 1.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 65px;
-      height: 65px;
-    }
-  
-    .img-cat6 {
-      display: flex;
-      flex-direction: column;
-      background: url(./images/taco\ 1.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 65px;
-      height: 65px;
-    }
-  
-    .img-cat7 {
-      display: flex;
-      flex-direction: column;
-      background: url(./images/float\ 1.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 65px;
-      height: 65px;
-    }
-  
-    .recta-cat {
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
-      width: 20px;
-      height: 3px;
-      border-radius: 15px;
-      border: none;
-    }
-  
-    .p {
-      background-color: #252525;
-      color: white;
-    }
-
-
 .contenedor-cat {
   display: flex;
   flex-direction: column;
@@ -501,6 +296,7 @@ body {
   justify-content: center;
   width: 100%;
   gap: 30px;
+  transition: all 0.7s ease ;
 }
 
 .menu-cat {
@@ -513,7 +309,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  transition: all 0.5s 0s ease;
+  }
 
 .img-cat1 {
   background: url(./images/unknown.png);
@@ -521,6 +318,7 @@ body {
   background-repeat: no-repeat;
   width: 65px;
   height: 65px;
+  transition: all 0.5s 0s ease;
 }
 
 .img-cat2 {
@@ -630,6 +428,7 @@ body {
       background-repeat: no-repeat;
       width: 65px;
       height: 65px;
+     
     }
   
     .img-cat2 {
