@@ -489,7 +489,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 0px;
+  top: 100px;
 }
 
 .categorias-h2 {
