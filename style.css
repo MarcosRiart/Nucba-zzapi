@@ -254,18 +254,18 @@ body{
 
 .popu-container{
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    grid-row-gap: 5%;
-    margin-left: 7%;
+    gap: 5%;
+    justify-items: center;
 }
 
 .populares{
     background-color: var(--gray);
     box-shadow: 0px 48px 128px rgba(0, 0, 0, 0.4); /* ! Arreglar */
     margin-top: 2.5%;
-    width: 70%;
-    height: 90%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -335,11 +335,10 @@ body{
     border: 1px solid white;
 }
 
-@media (min-width: 250px){
+@media (max-width: 1024px){
 
     .populares{
         font-size: 10px;
-        margin-left: 11.5%;
     }
 
     .popu-container{
@@ -359,8 +358,8 @@ body{
     }
 
     .price, .price.free{
-        width: 50%;
-        margin-left: 42.5%;
+        width: 90%;
+        place-items: center;
     }
 
     .price.free{
@@ -382,7 +381,6 @@ body{
 @media (min-width: 576px){
     .populares{
         font-size: 18px;
-        margin-left: 11.5%;
     }
 
     .price.free{
@@ -399,7 +397,6 @@ body{
 
     .populares{
         font-size: 14px;
-        margin-left: 0%;
     }
 
     .popu-container{
@@ -409,6 +406,8 @@ body{
 
     .popu-title{
         margin-top: 5%;
+        display: flex;
+        align-items: flex-start;
     }
 
     .populares:first-child{
@@ -471,6 +470,7 @@ body{
 @media (min-width: 1500px){
     .populares{
         font-size: 16px;
+        width: 80%;
     }
    }
   
@@ -576,7 +576,7 @@ body{
   color: white;
 }
 
-@media (max-width: 756px) {
+@media (max-width: 1024px) {
     .contenedor-cat {
       display: flex;
       flex-direction: column;
@@ -916,7 +916,7 @@ body{
 @media (min-width: 576px){
   #footer{
     gap: 25px;
-    margin: 35px 0px 10px 0px;
+    margin: 5% 0px 10px 0px;
   }
 
   .list-footer{
