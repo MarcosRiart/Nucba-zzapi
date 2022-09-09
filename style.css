@@ -1,10 +1,12 @@
-:root {
-  --background:
-  #252525;
-  --orange: #ffa400;
-  --red: #fc2933;
-  --white: #ffffff;
-  --gradient: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
+:root{
+    --background: #131415;
+    --gray: #252525;
+    --light-gray: #454545;
+    --orange: #FFA400;
+    --red: #FC2933;
+    --white: #FFFFFF;
+    --gradient: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+    
 }
 
 * {
@@ -98,6 +100,11 @@ body {
 
 .hero-parrafo{
     font-family: 'Montserrat';
+    padding: 0;
+    
+}
+
+body{
     font-weight: 400;
     text-align: center;
     font-size: 21px;
@@ -192,7 +199,6 @@ body {
  }
 
 .hero-titulo{  
-    font-family: 'Montserrat';
     font-weight: 700;  
     font-size: 55px;
     text-align: center;
@@ -200,14 +206,12 @@ body {
 }
 
 .hero-parrafo{
-    font-family: 'Montserrat';
     font-weight: 400;
     text-align: center;
     font-size: 21px;
 }
 
 .hero-titulo2{
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 40px;    
     text-align: center;
@@ -225,7 +229,6 @@ body {
     width: 166px;
     margin-top: 4px;
     letter-spacing: 0.5px;
-    font-family: 'Montserrat';
     font-weight: 700;
 }
 
@@ -238,9 +241,203 @@ body {
     transform:scale(1.1);
 }
 
+.populares-section{
+    display: flex;
+    flex-direction: column;
+}
 
+.popu-title{
+    color: var(--white);
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.popu-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5%;
+    margin-left: 7%;
+}
+
+.populares{
+    background-color: var(--gray);
+    box-shadow: 0px 48px 128px rgba(0, 0, 0, 0.4); /* ! Arreglar */
+    margin-top: 2.5%;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.popu-img{
+    width: 90%;
+    height: 100%;
+    margin: 5% auto;
+}
+
+.popu-names{
+    color: var(--white);
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+
+.popu-description{
+    color: var(--light-gray);
+    font-size: 1em;
+    margin-left: 5%;
+}
+
+.popu-price{
+    display: flex;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 1.5em;
+    width: 25%;
+    margin-left: 5%;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.price::before{
+    content: "$";
+}
+
+.price.free{
+    width: 30%;
+}
+
+.popu-agregar{
+    width: 30%;
+    height: 70%;
+    margin-left: 35%;
+    border: none;
+    border-radius: 15px;
+    background: var(--gradient);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1em;
+}
+
+
+.popu-agregar.free{
+    margin-right: 5%;
+    width: 30%;
+}
+
+.popu-agregar:hover{
+    border: 1px solid white;
+}
+
+@media (min-width: 250px){
+
+    .populares{
+        font-size: 10px;
+        margin-left: 11.5%;
+    }
+
+    .popu-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .popu-title{
+        margin-top: 10%;
+    }
+
+    .populares:first-child{
+        margin-top: 10%;
+    }
+
+    .popu-price{
+        flex-direction: column;
+    }
+
+    .price, .price.free{
+        width: 50%;
+        margin-left: 42.5%;
+    }
+
+    .price.free{
+        margin-left: 30%;
+    }
+
+    .price::first-letter{
+        margin-right: 2%;
+    }
+
+    .popu-agregar, .popu-agregar.free{
+        margin-bottom: 5%;
+        margin-left: 15%;
+        width: 70%;
+        padding: 2%;
+    }
+}
+
+@media (min-width: 576px){
+    .populares{
+        font-size: 18px;
+        margin-left: 11.5%;
+    }
+
+    .price.free{
+        margin-left: 40%;
+    }
+
+    .navbar-expand-sm .navbar-collapse{
+        justify-content: flex-end;
+        margin: 0px 50px 0px 0px;
+    }
+}
 
 @media (min-width: 1024px){
+
+    .populares{
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    .popu-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .popu-title{
+        margin-top: 5%;
+    }
+
+    .populares:first-child{
+        margin-top: 0%;
+    }
+
+    .popu-price{
+        flex-direction: row;
+    }
+
+    .price, .price.free{
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .price.free{
+        margin-left: 5%;
+    }
+
+    .price::first-letter{
+        margin-right: 10%;
+    }
+
+    .popu-agregar, .popu-agregar.free{
+        margin-bottom: 0%;
+        margin-left: 5%;
+        width: 35%;
+    }
+
     .section-hero{
         display: flex;
         align-items: center;
@@ -271,10 +468,9 @@ body {
     }
 }
 
-@media (min-width: 576px){
-    .navbar-expand-sm .navbar-collapse{
-        justify-content: flex-end;
-        margin: 0px 50px 0px 0px;
+@media (min-width: 1500px){
+    .populares{
+        font-size: 16px;
     }
    }
   
