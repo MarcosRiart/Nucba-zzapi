@@ -257,7 +257,7 @@ body{
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    gap: 5%;
+    margin: 5%;
     justify-items: center;
 }
 
